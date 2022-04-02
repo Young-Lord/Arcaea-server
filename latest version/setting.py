@@ -9,7 +9,7 @@ class Config():
     Host and port of your server
     '''
     HOST = '0.0.0.0'
-    PORT = '80'
+    PORT = '6116'
     '''
     --------------------
     '''
@@ -164,19 +164,19 @@ class Config():
     Arcaea登录的最大允许设备数量，最小值为1
     The maximum number of devices allowed to log in Arcaea, minimum: 1
     '''
-    LOGIN_DEVICE_NUMBER_LIMIT = 1
+    LOGIN_DEVICE_NUMBER_LIMIT = 100
     '''
     是否允许同设备多应用共存登录
     请注意，这个选项设置为True时，下一个选项将自动变为False
     If logging in from multiple applications on the same device is allowed
     Note that when this option is set to True, the next option automatically becomes False
     '''
-    ALLOW_LOGIN_SAME_DEVICE = False
+    ALLOW_LOGIN_SAME_DEVICE = True
     '''
     24小时内登陆设备数超过最大允许设备数量时，是否自动封号（1天、3天、7天、15天、31天）
     When the number of login devices exceeds the maximum number of devices allowed to log in Arcaea within 24 hours, whether the account will be automatically banned (1 day, 3 days, 7 days, 15 days, 31 days)
     '''
-    ALLOW_BAN_MULTIDEVICE_USER_AUTO = True
+    ALLOW_BAN_MULTIDEVICE_USER_AUTO = False
     '''
     --------------------
     '''
@@ -196,7 +196,7 @@ class Config():
     用户注册时的默认记忆源点数量
     The default amount of memories at the time of user registration
     '''
-    DEFAULT_MEMORIES = 0
+    DEFAULT_MEMORIES = 6116
     '''
     --------------------
     '''
